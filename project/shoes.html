@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #conatiner{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>shoes page</h1>
+    <div id="conatiner">
+
+    </div>
+
+</body>
+</html>
+
+<script>
+     var shoesData=[
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/SHOES-MEN.jpg?4112",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/SHOES-MEN.jpg?4112",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/SHOES-MEN.jpg?4112",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/SHOES-MEN.jpg?4112",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+            image_url:
+            "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/women_shoes.jpg?v=1598516516",
+            name:"SANDALS",
+            price:"$350",
+            strikedoffprice:"$600",
+        },
+
+        {
+            image_url:
+            "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/women_shoes.jpg?v=1598516516",
+            name:"SANDALS",
+            price:"$350",
+            strikedoffprice:"$600",
+        },
+
+        {
+            image_url:
+            "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/women_shoes.jpg?v=1598516516",
+            name:"SANDALS",
+            price:"$350",
+            strikedoffprice:"$600",
+        },
+
+        {
+            image_url:
+            "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/women_shoes.jpg?v=1598516516",
+            name:"SANDALS",
+            price:"$350",
+            strikedoffprice:"$600",
+        },
+
+        {
+            image_url:
+            "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1491584_large.jpg?v=1636498841",
+            name:"Gucci Boots",
+            price:"$750",
+            strikedoffprice:"$1200",
+        },
+
+        {
+            image_url:
+            "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1035380_large.jpg?v=1636498129",
+            name:"women leather knee-High boot",
+            price:"$750",
+            strikedoffprice:"$1200",
+        },
+
+        
+        {
+            image_url:
+            "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313168430_RLLZ_2_large.jpg?v=1648601812",
+            name:"Gucci Boots women pony skin ",
+            price:"$750",
+            strikedoffprice:"$1200",
+        },
+
+        
+        {
+            image_url:
+            "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1035380_large.jpg?v=1636498129",
+            name:"Gucci Boots women high knee boot",
+            price:"$750",
+            strikedoffprice:"$1200",
+        },
+
+
+
+
+
+       
+    ]
+
+
+    shoesData.map(function(elem){
+        var box=document.createElement("div")
+
+        var img=document.createElement("img")
+        img.src=elem.image_url
+
+        var name=document.createElement("p")
+        name.textContent=elem.name
+
+        var price=document.createElement("p")
+        price.innerText=elem.price
+
+        box.append(img,name,price)
+
+        document.querySelector("#conatiner").append(box)
+
+    })
+    
+</script>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           #container{
+            display:grid;
+            grid-template-columns: repeat(5,1fr);
+            gap:20px;
+           }
+      
+
+     
+    </style>
+</head>
+<body>
+    <h1>designer page</h1>
+    </div>
+    <div id="container">
+
+    </div>
+    
+</body>
+</html>
+<script>
+      var MenData=[
+     {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+    ]
+
+
+
+    MenData.map(function(elem){
+        var box=document.createElement("div")
+
+        var img=document.createElement("img")
+        img.src=elem.image_url
+
+        var name=document.createElement("p")
+        name.textContent=elem.name
+
+        var price=document.createElement("p")
+        price.innerText=elem.price
+
+        box.append(img,name,price)
+
+        document.querySelector("#container").append(box)
+
+    })
+
+
+</script>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           #container{
+            display:grid;
+            grid-template-columns: repeat(5,1fr);
+            gap:20px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>handbag page</h1>
+    <div id="container">
+
+    </div>
+</body>
+</html>
+<script>
+     var MenData=[
+     {
+        image_url:
+        "https://rukminim2.flixcart.com/image/200/200/kq6yefk0/puff-sponge/3/o/z/modernize-the-way-you-make-up-sponge-bblspk-beauty-blender-original-imag494hnxqfdpv8.jpeg?q=70",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://rukminim2.flixcart.com/image/200/200/jqgy3rk0/foundation/b/f/h/60-matte-mousse-foundation-mars-original-imafceyau9stvtyh.jpeg?q=70",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://rukminim2.flixcart.com/image/200/200/kh0vonk0/nail-polish/a/u/j/5-nail-pops-nail-color-153-elle18-original-imafx4rhnruf3fnp.jpeg?q=70",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+       
+        {
+        image_url:
+        "https://rukminim2.flixcart.com/image/200/200/kbpeoi80/combo-kit/v/u/d/men-s-grooming-kit-tmc-web-822-the-man-company-original-imafsz5gfngyamq7.jpeg?q=70",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://rukminim2.flixcart.com/image/200/200/khp664w0-0/deodorant/a/e/a/800-1-sacred-love-for-women-1-sacrifice-ii-for-him-for-men-1-original-imafxnhpnk5ut2fm.jpeg?q=70",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://rukminim2.flixcart.com/image/200/200/kf2v3ww0/lipstick/q/f/f/6-fab-5-5-in-1-lipstick-renee-original-imafvhp2tuft7rxd.jpeg?q=70",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        
+        {
+        image_url:
+        "https://rukminim2.flixcart.com/image/200/200/kf2v3ww0/lipstick/q/f/f/6-fab-5-5-in-1-lipstick-renee-original-imafvhp2tuft7rxd.jpeg?q=70",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        
+        {
+        image_url:
+        "https://rukminim2.flixcart.com/image/200/200/k3xcdjk0/perfume/8/h/u/100-blu-dreams-vintage-musk-native-clouds-eau-de-parfum-ajmal-original-imafkrfy66stqayz.jpeg?q=70",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        
+        {
+        image_url:
+        "https://rukminim2.flixcart.com/image/200/200/kosxzm80/perfume/o/b/d/amalfi-bleu-eau-de-parfum-skinn-by-titan-women-original-imag36mjyezqgsgd.jpeg?q=70",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        {
+        image_url:
+        "https://rukminim2.flixcart.com/image/200/200/kosxzm80/perfume/o/b/d/amalfi-bleu-eau-de-parfum-skinn-by-titan-women-original-imag36mjyezqgsgd.jpeg?q=70",
+        name:"DRIVERS, LOAFERS & SLIP-ONS",
+        price:"$350",
+        strikedoffprice:"$500",
+        },
+
+        
+      
+
+     
+    ]
+
+
+        MenData.map(function(elem){
+        var box=document.createElement("div")
+
+        var img=document.createElement("img")
+        img.src=elem.image_url
+
+        var name=document.createElement("p")
+        name.textContent=elem.name
+
+        var price=document.createElement("p")
+        price.innerText=elem.price
+
+        box.append(img,name,price)
+
+        document.querySelector("#container").append(box)
+
+    })
+    
+
+</script>
+</script>
